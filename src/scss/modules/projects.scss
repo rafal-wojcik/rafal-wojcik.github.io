@@ -1,0 +1,70 @@
+.projects {
+    padding: 64px 16px 0;
+    &_description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        color: $text;
+        margin-bottom: 46px;
+    }
+    &_header {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        color: $textDark;
+
+    }
+
+}
+
+.project {
+     box-shadow: (0px 4px 16px rgba(0, 0, 0, 0.25));
+     background: $gray;
+     border-radius: 16px;
+     color: $console;
+     overflow: hidden;
+     font-weight: normal;
+            font-size: 13px;
+            line-height: 24px;
+     
+     font-family: Roboto Mono;
+     &_circle {
+         display: block;
+         background: $mediumGray;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         margin-right: 8px;
+        }
+        &_content {
+            padding: 24px 16px;
+        }
+        &_grid {
+            display: grid;
+            grid-template-columns: 102px 1fr;
+            column-gap: 8px;
+        }
+        &_label {
+            display: block;
+            text-align: right;
+            font-weight: normal;
+            color: $console;
+        }
+        &_link {
+            color: $linkConsole;
+        }
+        &_title {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+     &_window {
+       height: 40px;
+       background:  #1E1E1E;
+       display: flex;
+       align-items: center;
+       padding:0 0 0 16px;
+     }
+}
