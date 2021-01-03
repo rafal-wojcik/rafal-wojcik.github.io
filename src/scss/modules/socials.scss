@@ -1,11 +1,11 @@
 .socials {
     list-style-type: none;
-    display: flex;
+    display:flex;
     justify-content: center;
-    &_item {
-        margin: 0 12px;
-    }
-    &_link {
+    padding: 0;
+    text-align: center;
+    
+    &_item{
         width: 48px;
         height: 48px;
         background: #fff;
@@ -14,7 +14,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 12px 64px;
     }
+   
     
 }
 
