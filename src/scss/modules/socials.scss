@@ -1,0 +1,18 @@
+.socials {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    &_item {
+        width: 48px;
+        height: 48px;
+        background: #fff;
+        margin: 0 12px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
