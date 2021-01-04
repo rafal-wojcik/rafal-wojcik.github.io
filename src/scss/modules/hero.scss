@@ -4,6 +4,12 @@
         max-width: 768px;
         margin: 0 auto;
     }
+    &_bubble {
+        position: absolute;
+        left: calc(50% + 90px);
+        top: -26px;
+    
+    }
     &_contact {
         border-radius: 64px;
         color: #fff;
@@ -22,9 +28,36 @@
         line-height: 32px;
         text-align: center;
         color: $textDark;
+        @media (min-width: $desktop) {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
     &_hello {
         display: none;
+        @media (min-width: $desktop) {
+            display: block;
+            background: $textBlue;
+            color: #fff;
+            padding: 16px 19px;
+            border-radius: 16px;
+            background: $textBlue;
+            font-weight: bold;
+            font-size: 32px;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 100%;
+                left: 32px;
+                content: ""; 
+                display: block;
+                width: 17.42px;
+                height: 22.66px;
+                background: url('../assets/img/speech.svg');
+
+            }
+
+        }
     }
     &_image {
         box-sizing: content-box;
@@ -32,11 +65,18 @@
         height: 96 px;
         border-radius: 50%;
         border: 16px solid #F6F9FD;
+        @media (min-width: $desktop)
+        {
+            width: 178px;
+            height: 178px;
+            border: 24px solid #F6F9FD;
+        }
     }
     &_image-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     &_link {
         font-weight: 300px;
@@ -50,6 +90,10 @@
         line-height: 32px;
         text-align: center;
         margin: 16px 21px 48px;
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 40px;
+        }
     }
     &_special {
         color: #1070CA;
