@@ -34,8 +34,8 @@
               position: relative;
               &::before, &::after {
                   position: absolute;
-                  width: 82,94px;
-                  height: 254,88px;
+                  width: 82.94px;
+                  height: 254.88px;
                   content: '';
                   display: block;
                   top: 0;
@@ -124,6 +124,7 @@
     }
     &_special {
         color: #1070CA;
+        white-space: nowrap;
     }
 
 }
