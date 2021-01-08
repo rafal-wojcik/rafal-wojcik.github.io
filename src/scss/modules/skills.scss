@@ -2,11 +2,13 @@
     background: $textBlue;
     color: #fff;
     padding: 64px 16px 88px;
-    &_column {
-        @media (min-width: $desktop) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+    &_columns {
+      @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1184;
+
+      }
     }
      &_header {
         font-weight: bold;
@@ -35,14 +37,14 @@
         padding: 0 0 0 24px;
         margin: 0 0 16px;
         position: relative;
-    &_item:before {
+    &::before {
         content: '';
         position: absolute;
         width: 12px;
         height: 9px;
+        display: block;
         left: 0;
         top: 7px;
-        display: block;
         background: url("../assets/img/small-tick-green.png");
         .skills-list--blue & {
             background: url("../assets/img/small-tick-blue.png");

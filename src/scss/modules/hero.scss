@@ -4,6 +4,9 @@
         max-width: 768px;
         margin: 0 auto;
     }
+    @media (min-width: $desktop) {
+        max-width: 100%;
+    }
     &_bubble {
         position: absolute;
         left: calc(50% + 90px);
@@ -23,6 +26,30 @@
         font-size: 20px;
         line-height: 40px;
       }
+      &_description {
+          text-align: center;
+          @media (min-width: $desktop) {
+              max-width: 786px;
+              margin: 0 auto;
+              position: relative;
+              &::before, &::after {
+                  position: absolute;
+                  width: 82,94px;
+                  height: 254,88px;
+                  content: '';
+                  display: block;
+                  top: 0;
+                    }
+                &::before {
+                    background: url('../assets/img/hero-left.svg');
+                    right: 100%;
+                }
+                &::after {
+                    background: url('../assets/img/hero-right.svg');
+                    left: 100%;  
+                }
+      }
+    }
     &_header {
         font-size: 26px;
         line-height: 32px;
@@ -45,7 +72,7 @@
             font-weight: bold;
             font-size: 32px;
             position: relative;
-            &:after {
+            &::after {
                 position: absolute;
                 top: 100%;
                 left: 32px;
@@ -98,4 +125,5 @@
     &_special {
         color: #1070CA;
     }
+
 }
