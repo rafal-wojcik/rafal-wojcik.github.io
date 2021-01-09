@@ -6,7 +6,14 @@
         line-height: 32px;
         text-align: center;
         color: $text;
-        margin-bottom: 46px;
+        max-width: 786;
+        margin: 0 auto 46px;
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 128px;
+        }
+        
     }
     &_header {
         font-size: 36px;
@@ -14,6 +21,10 @@
         text-align: center;
         color: $textDark;
         padding: 0 0 32px 0;
+        @media (min-width: $desktop) {
+            font-size: 48px;
+            line-height: 56px;
+        }
 
     }
 }
@@ -26,10 +37,13 @@
      color: $console;
      overflow: hidden;
      font-weight: normal;
-            font-size: 13px;
-            line-height: 24px;
-     
+     font-size: 13px;
+     line-height: 24px;
      font-family: Roboto Mono;
+     @media (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 24px;
+     }
      &_circle {
          display: block;
          background: $mediumGray;
@@ -40,11 +54,21 @@
         }
         &_content {
             padding: 24px 16px 11px 16px;
+            @media (min-width: $desktop) {
+                padding: 24px 48px 58px 48px;
+            }
         }
         &_grid {
             display: grid;
             grid-template-columns: 102px 1fr;
             column-gap: 8px;
+            margin: 0 0 8px 0;
+            @media (min-width: $desktop) {
+            grid-template-columns: 116px 1fr;
+            }
+           &--description {
+               margin-bottom: 24px;
+           }
         }
         &_label {
             display: block;
@@ -62,6 +86,11 @@
             font-size: 13px;
             line-height: 24px;
             color: #FFFFFF;
+            margin: 24px 0 8px;
+            @media (min-width: $desktop) {
+            font-size: 16px;
+            line-height: 24px;
+            }
         }
      &_window {
        height: 40px;
@@ -80,9 +109,10 @@
     display: grid;
     column-gap: 24px;
     row-gap: 24px;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr
+    max-width: 1184px;
+    margin: 0 auto;
 
-}
+    }
 
 
