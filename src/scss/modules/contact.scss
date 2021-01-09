@@ -28,8 +28,10 @@
            text-align: center;
            @media (min-width: $desktop) {
                display: flex;
-               align-items: center;
                justify-content: center;
+               align-items: baseline;
+               max-width: 580px;
+               margin: 128px 0 auto;
            }
        }
        
