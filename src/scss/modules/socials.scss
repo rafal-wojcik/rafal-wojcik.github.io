@@ -2,9 +2,13 @@
     list-style-type: none;
     display:flex;
     justify-content: center;
+    align-items: center;
     padding: 0;
     text-align: center;
     margin: 0 110px 0 0;
+    @media (max-width: 959px) {
+        margin: 0;
+    }
     
     &_item{
         width: 48px;
