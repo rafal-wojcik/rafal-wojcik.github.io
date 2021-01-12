@@ -1,4 +1,4 @@
-![cover](https://rafal-wojcik.github.io/wtf.png)
+![cover](https://rafal-wojcik.github.io/og-wtf.png)
 
 # RAFAŁ WÓJCIK - JUNIOR FRONTEND DEVELOPER
 
